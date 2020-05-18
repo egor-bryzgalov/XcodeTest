@@ -29,7 +29,7 @@ steps:
     configuration: 
     sdk: 
     packageApp: false
-    signingOption: 'manual'
+    signingOption: 'auto'
     signingIdentity: 'Egör2'
     publishJUnitResults: true
     teamId: '285W24646W'
