@@ -25,7 +25,8 @@ steps:
     configuration: 'Release'
     xcWorkspacePath: '**/*.xcodeproj/project.xcworkspace'
     xcodeVersion: 'default' # Options: 8, 9, 10, default, specifyPath
-    signingOption: 'manual'
-    signingIdentity: Egör2
+    signingOption: 'auto'
+    teamId: 'Egör2'
+
 
     
