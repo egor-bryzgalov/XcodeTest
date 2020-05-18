@@ -32,6 +32,8 @@ steps:
     signingOption: 'manual'
     signingIdentity: 'Egör2'
     publishJUnitResults: true
+    teamId: '285W24646W'
+
 
 
 
