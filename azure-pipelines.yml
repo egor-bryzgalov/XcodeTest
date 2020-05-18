@@ -17,6 +17,11 @@ steps:
     keychain: 'temp'
     certPwd: test
 
+- task: InstallAppleProvisioningProfile@1
+  inputs:
+    provisioningProfileLocation: 'secureFiles'
+    provProfileSecureFile: 'TestProfile.mobileprovision'
+
 
 - task: Xcode@5
   inputs:
