@@ -34,9 +34,10 @@ steps:
     sdk: 'iphoneos'
     packageApp: false
     signingOption: 'manual'
-    signingIdentity: 'Normal'
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
     provisioningProfileUuid: 'e75cf333-41c0-4174-be83-2c140c308366'
     provisioningProfileName: 'TestProfile'
+
 
 
 
