@@ -25,7 +25,7 @@ steps:
 - task: Bash@3
   inputs:
     targetType: 'inline'
-    script: 'security find-certificate -a -p'
+    script: 'security find-certificate -a -p | openssl x509 -inform PEM'
 
 - task: Xcode@5
   inputs:
