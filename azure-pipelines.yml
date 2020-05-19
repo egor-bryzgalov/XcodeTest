@@ -11,9 +11,9 @@ pool:
 
 steps:
 
-- task: InstallAppleCertificatem@2
+- task: InstallAppleCertificate@2
   inputs:
-    certSecureFile: 'TestP12.p12'
+    certSecureFile: 'example2.p12'
     keychain: 'temp'
     certPwd: 'test'
 
