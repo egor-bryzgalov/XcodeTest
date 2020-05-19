@@ -22,15 +22,17 @@ steps:
     provisioningProfileLocation: 'secureFiles'
     provProfileSecureFile: 'TestProfile.mobileprovision'
 
-
 - task: Xcode@5
   inputs:
     actions: 'build'
+    configuration: 'Release'
+    sdk: 'iphoneos'
     packageApp: false
     signingOption: 'manual'
     signingIdentity: 'Egör2'
     provisioningProfileUuid: 'e75cf333-41c0-4174-be83-2c140c308366'
     provisioningProfileName: 'TestProfile'
+
 
 
 
