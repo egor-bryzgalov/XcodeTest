@@ -13,7 +13,7 @@ steps:
 
 - task: InstallAppleCertificatem@2
   inputs:
-    certSecureFile: 'certfortest.p12'
+    certSecureFile: 'aps.p12'
     keychain: 'temp'
     certPwd: 'test'
 
