@@ -13,7 +13,7 @@ steps:
 
 - task: InstallAppleCertificatem@2
   inputs:
-    certSecureFile: 'example2.p12'
+    certSecureFile: 'TestP12.p12'
     keychain: 'temp'
     certPwd: 'test'
 
@@ -21,11 +21,6 @@ steps:
   inputs:
     provisioningProfileLocation: 'secureFiles'
     provProfileSecureFile: 'TestProfile.mobileprovision'
-
-- task: Bash@3
-  inputs:
-    targetType: 'inline'
-    script: 'security find-certificate -a -p | openssl x509 -inform PEM'
 
 - task: Xcode@5
   inputs:
@@ -35,8 +30,7 @@ steps:
     packageApp: false
     signingOption: 'manual'
     signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
-    provisioningProfileUuid: 'e75cf333-41c0-4174-be83-2c140c308366'
-    provisioningProfileName: 'TestProfile'
+    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
 
 
 
