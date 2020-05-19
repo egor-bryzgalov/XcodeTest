@@ -29,7 +29,7 @@ steps:
     sdk: 'iphoneos'
     packageApp: false
     signingOption: 'manual'
-    signingIdentity: 'Egör2'
+    signingIdentity: 'Egr2'
     provisioningProfileUuid: 'e75cf333-41c0-4174-be83-2c140c308366'
     provisioningProfileName: 'TestProfile'
 
