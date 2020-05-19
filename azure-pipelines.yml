@@ -15,7 +15,6 @@ steps:
   inputs:
     certSecureFile: 'example.p12'
     keychain: 'temp'
-    certPwd: test
 
 - task: InstallAppleProvisioningProfile@1
   inputs:
