@@ -20,7 +20,7 @@ steps:
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles'
-    provProfileSecureFile: 'TestProfile.mobileprovision'
+    provProfileSecureFile: 'TestAzure.mobileprovision'
 
 - task: Xcode@5
   inputs:
