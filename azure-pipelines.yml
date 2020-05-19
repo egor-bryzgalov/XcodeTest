@@ -13,14 +13,14 @@ steps:
 
 - task: InstallAppleCertificatem@2
   inputs:
-    certSecureFile: 'ia.p12'
+    certSecureFile: 'aps.p12'
     keychain: 'temp'
-    certPwd: test
+    certPwd: 'test'
 
 - task: InstallAppleProvisioningProfile@1
   inputs:
     provisioningProfileLocation: 'secureFiles'
-    provProfileSecureFile: 'TestProfile.mobileprovision'
+    provProfileSecureFile: 'TestAzure.mobileprovision'
 
 - task: Xcode@5
   inputs:
@@ -29,9 +29,9 @@ steps:
     sdk: 'iphoneos'
     packageApp: false
     signingOption: 'manual'
-    signingIdentity: 'Egör2'
-    provisioningProfileUuid: 'e75cf333-41c0-4174-be83-2c140c308366'
-    provisioningProfileName: 'TestProfile'
+    signingIdentity: '$(APPLE_CERTIFICATE_SIGNING_IDENTITY)'
+    provisioningProfileUuid: '$(APPLE_PROV_PROFILE_UUID)'
+
 
 
 
