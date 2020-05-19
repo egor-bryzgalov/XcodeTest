@@ -22,6 +22,11 @@ steps:
     provisioningProfileLocation: 'secureFiles'
     provProfileSecureFile: 'TestProfile.mobileprovision'
 
+- task: Bash@3
+  inputs:
+    targetType: 'inline'
+    script: 'security find-certificate -a -p'
+
 - task: Xcode@5
   inputs:
     actions: 'build'
